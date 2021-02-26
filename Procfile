@@ -1,1 +1,1 @@
-web: java -jar target/car-exchange-0.0.1-SNAPSHOT.jar $PORT
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/car-exchange-0.0.1-SNAPSHOT.jar
