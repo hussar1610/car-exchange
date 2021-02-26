@@ -33,3 +33,7 @@ build/
 ### VS Code ###
 .vscode/
 
+/package.json
+/webpack.config.js
+/webpack.generated.js
+/node/

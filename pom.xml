@@ -43,7 +43,7 @@
 		<!-- Main Maven repository -->
 		<pluginRepository>
 			<id>central</id>
-			<url>https://repo1.maven.apache.org/maven2</url>
+			<url>https://repo.maven.apache.org/maven2</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
