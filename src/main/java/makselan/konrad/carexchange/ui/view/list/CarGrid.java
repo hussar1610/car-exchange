@@ -4,6 +4,7 @@ import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.renderer.NumberRenderer;
 import makselan.konrad.carexchange.backend.entity.Car;
 import java.text.NumberFormat;
+import java.util.Locale;
 
 public class CarGrid extends Grid<Car> {
 
@@ -13,7 +14,7 @@ public class CarGrid extends Grid<Car> {
         setSizeFull();
 
         setColumns("make", "model", "year", "color");
-        NumberFormat withoutFractionDigitsFormat = NumberFormat.getCurrencyInstance();
+        NumberFormat withoutFractionDigitsFormat = NumberFormat.getCurrencyInstance(new Locale("pl"));
         withoutFractionDigitsFormat.setMaximumFractionDigits(0);
         addColumn(new NumberRenderer<>(
                 Car::getPrice, withoutFractionDigitsFormat)
