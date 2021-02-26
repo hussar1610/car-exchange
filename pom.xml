@@ -205,9 +205,8 @@
 						<artifactId>heroku-maven-plugin</artifactId>
 						<version>2.0.13</version>
 						<configuration>
-							<appName>vaadin-heroku-app</appName>
 							<processTypes>
-								<web>java $JAVA_OPTS -jar target/vaadin-heroku-2.0-SNAPSHOT.jar --server.port=$PORT</web>
+								<web>java $JAVA_OPTS -jar target/car-exchange-0.0.1-SNAPSHOT.jar --server.port=$PORT</web>
 							</processTypes>
 						</configuration>
 					</plugin>
