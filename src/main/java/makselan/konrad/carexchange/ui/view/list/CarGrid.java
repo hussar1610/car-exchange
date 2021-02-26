@@ -12,9 +12,8 @@ public class CarGrid extends Grid<Car> {
         super(Car.class);
         addClassName("car-grid");
         setSizeFull();
-
         setColumns("make", "model", "year", "color");
-        NumberFormat withoutFractionDigitsFormat = NumberFormat.getCurrencyInstance(new Locale("pl"));
+        NumberFormat withoutFractionDigitsFormat = NumberFormat.getCurrencyInstance(new Locale("pl-PL"));
         withoutFractionDigitsFormat.setMaximumFractionDigits(0);
         addColumn(new NumberRenderer<>(
                 Car::getPrice, withoutFractionDigitsFormat)
