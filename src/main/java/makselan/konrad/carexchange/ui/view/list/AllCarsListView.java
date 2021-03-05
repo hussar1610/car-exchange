@@ -94,6 +94,6 @@ public class AllCarsListView extends VerticalLayout {
     }
 
     private void updateListOfCars() {
-        grid.setItems(carService.findAll());
+        grid.setItems(carService.findAll(filterTextField.getValue()));
     }
 }
